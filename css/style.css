@@ -11,30 +11,57 @@ body{
 }
 
 header{
-  height: 50px;
+  height: 40px;
   background-color: lightblue;
 }
 
 main{
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   overflow: auto;
-  background-color: aqua;
 }
 
 footer{
-  height: 70px;
-  background-color: lightblue;
+  height: 60px;
+  background-color: #222222;
 }
+
+.d-flex{
+  display: flex;
+}
+
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.fl-j-start{
+  justify-content: flex-start;
+}
+
+.fl-j-center{
+  justify-content: center;
+}
+
+.fl-j-end{
+  justify-content: flex-end;
+}
+
+.fl-j-between{
+  justify-content: space-between;
+}
+
+.fl-a-center{
+  align-items: center;
+}
+
+
 
 /* /REGOLE GENERALI */
 
 /* MAIN */
-main .container-flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main .container{
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 5px;
 }
 
 main .user{
@@ -68,3 +95,62 @@ main .user .tag-user:hover{
 }
 
 /* /MAIN */
+
+
+/* FOOTER */
+
+footer section{
+  padding: 5px;
+}
+
+footer section *{
+  display: inline-block;
+}
+
+footer .control button{
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin: 0 10px;
+}
+
+footer .control button:hover{
+  color: lightgray;
+}
+
+footer .control button:active{
+  color: lightblue;
+}
+
+footer .control .more{
+  margin-left: 0;
+}
+
+footer .end button{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+footer .end button:hover{
+  padding: 6px 12px;
+}
+
+footer .end button:active{
+  color: black;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+footer i{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+footer .more i{
+  font-size: 0.8rem;
+}
+/* /FOOTER */
