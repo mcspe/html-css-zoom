@@ -179,11 +179,15 @@ footer .end button:active{
 }
 
 footer i{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
+footer button span{
+  font-size: .7rem;
+}
+
 footer .more i{
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 /* /FOOTER */
