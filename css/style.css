@@ -12,7 +12,6 @@ body{
 
 header{
   height: 40px;
-  background-color: lightblue;
 }
 
 main{
@@ -25,38 +24,68 @@ footer{
   background-color: #222222;
 }
 
-.d-flex{
-  display: flex;
-}
+    /* UTILITIES */
+    .d-flex{
+      display: flex;
+    }
 
-.d-flex-col{
-  display: flex;
-  flex-direction: column;
-}
+    .d-flex-col{
+      display: flex;
+      flex-direction: column;
+    }
 
-.fl-j-start{
-  justify-content: flex-start;
-}
+    .fl-j-start{
+      justify-content: flex-start;
+    }
 
-.fl-j-center{
-  justify-content: center;
-}
+    .fl-j-center{
+      justify-content: center;
+    }
 
-.fl-j-end{
-  justify-content: flex-end;
-}
+    .fl-j-end{
+      justify-content: flex-end;
+    }
 
-.fl-j-between{
-  justify-content: space-between;
-}
+    .fl-j-between{
+      justify-content: space-between;
+    }
 
-.fl-a-center{
-  align-items: center;
-}
+    .fl-a-center{
+      align-items: center;
+    }
 
-
-
+    .fl-a-start{
+      align-items: flex-start;
+    }
+    /* /UTILITIES */
 /* /REGOLE GENERALI */
+
+
+/* HEADER */
+header{
+  padding: 5px;
+}
+
+header button{
+  cursor: pointer;
+  background-color: #4A4A4A;
+  color: white;
+  font-size: .6rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+header button:hover{
+  padding: 6px 12px;
+}
+
+header button:active{
+  color: black;
+}
+/* /HEADER */
+
 
 /* MAIN */
 main .container{
@@ -115,12 +144,16 @@ footer .control button{
   margin: 0 10px;
 }
 
+footer .control .green i{
+  color: green;
+}
+
 footer .control button:hover{
   color: lightgray;
 }
 
-footer .control button:active{
-  color: lightblue;
+footer .control button:active *{
+  color: rgb(3, 248, 3);
 }
 
 footer .control .more{
